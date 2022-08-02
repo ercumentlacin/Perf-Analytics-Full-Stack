@@ -1,0 +1,11 @@
+config:
+  target: "http://localhost:9000/api/v1/perf-analytics"
+  phases:
+    - duration: 1
+      arrivalRate: 200
+
+scenarios:
+  - name: "Retrieve data"
+    flow:
+      - get:
+          url: "/example"
